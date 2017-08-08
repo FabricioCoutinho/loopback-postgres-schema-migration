@@ -1,0 +1,32 @@
+{
+  "name": "Order_Schema1",
+  "base": "PersistedModel",
+  "public": false,
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true,
+    "postgresql": {
+      "table": "my_orders",
+      "schema": "schema1"
+    }
+  },
+  "mixins": {},
+  "properties": {
+    "active": {
+      "type": "boolean",
+      "required": false
+    },
+    "description": {
+      "type": "string",
+      "required": false
+    },
+    "client_id": {
+      "type": "number",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
